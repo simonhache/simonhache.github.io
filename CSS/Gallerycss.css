@@ -1,0 +1,129 @@
+
+* {box-sizing: border-box}
+
+body, html {
+    
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  font-family: FrankFont;
+}
+
+/* -------------------------------- Photo Galery -----------------------------------*/
+
+.Separator {
+    font-size: 50px;
+    height: 100px;
+    margin-bottom: 0px;
+    padding:16px;
+    padding-top: 50px;   
+    width: 100%;
+    left:0;
+    top 50%;
+    text-align: center;
+    color:black;
+    
+}
+
+.Galery {
+    margin: 100px;
+}
+
+.Item {
+    width:33%;
+    margin:20px;
+    flex-grow: 3;
+}
+
+.rows {
+    display:flex;
+    flex-grow: 3;
+    padding: 0px 30px;
+}
+
+.rows img {
+  vertical-align: middle;
+  width:100%;
+
+}
+
+.rows img:hover {
+  opacity:0.6
+}
+
+.Image {
+    float: right;
+    
+}
+.fa {
+    color: black;  
+    font-size: 400px;
+    text-decoration: none; 
+    margin-bottom: 2%;
+}
+
+.fa:hover {
+    color:dimgrey;
+    cursor: pointer;
+}
+
+.footer {
+    height:50px;
+    padding = 12px;
+}
+
+.CustomAlert {
+    display:none;
+    position: -webkit-sticky;
+    position:sticky;
+    background-color:coral;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width:100%;
+    text-align: center;
+    font-family: FrankFont;
+    
+}
+
+.CustomAlert:hover {
+    cursor:pointer;
+}
+
+.Contact {
+    position:absolute;
+    width:30%;
+    left:49%;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@font-face {
+  font-family: FrankFont;
+  src: url("/inspiration/Frankfont-regular.ttf");
+}

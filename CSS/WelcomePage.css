@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  font-family: FrankFont;
+}
+
+.Container {
+    position:relative;
+    width: 100%;
+    height:100%;
+    color:ghostwhite;
+    font-size:80px;
+    background-color: transparent;
+    background-image:url("/Photo/Wildo-18.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TitleContainer {
+    position : absolute;
+    top: 40%;
+    left:44%;
+}
+
+.LogoContainer {
+    position : absolute;
+    top: 50%;
+    left:45%;
+}
+
+.Content {
+    position:absolute; 
+    top:70%;
+    width:100%
+}
+.Button {
+    background-color: transparent;
+    color:ghostwhite;
+    font-size:60px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: 1s; 
+}
+
+.logo { 
+    margin: 0;  
+
+}
+.Button.Photo {
+  position:absolute;
+  left:33%;
+}
+.Button.Video {
+    position:absolute;
+    left : 48%;
+}
+
+.Button.Graph {  
+  position:absolute;
+  left: 63%;
+}
+
+.Button:hover {
+    color: black;
+}
+
+.Separator{
+}
+
+@font-face {
+  font-family: FrankFont;
+  src: url("/inspiration/Frankfont-regular.ttf");
+}

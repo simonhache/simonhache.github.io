@@ -1,0 +1,117 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color:snow;
+}
+
+
+
+.header {
+    padding:15px;
+    margin:0;
+}
+
+/* -------------------------------- Navigation Bar -----------------------------------*/
+.NavigBar { 
+    background: transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    text-align: justify;
+    color: black;         
+}
+.NavigBar li {
+    float:right;    
+}
+
+.NavigBar li a {
+    float:left;
+    display: block;
+    font-size: 18px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: transparent;
+    text-transform: uppercase;  
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black; 
+}
+    
+
+.NavigBar li a:hover {
+    color:dimgrey;
+}
+
+/* -----------------------------Side Navigation Bar Content Style -----------------------------------*/
+.sidenav {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25wv;
+  color: snow;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* ----------------------------- MainFrame Content Style -----------------------------------*/
+
+.Title {
+    width: 100%
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.Column.gallery {
+  width: 80%;
+  margin-left: 25%;
+}
+
+.Column.gallery:hover {
+    opacity: 80%
+}
+
+
+.desc {
+  padding: 30px;
+  font-size: 20wv;
+  font-weight:  bold;
+  text-align: justify;
+  color:black;
+  background-color: snow;
+}
+
+/* ------------------------------- Footer Style -----------------------------------*/
+.Footer {
+    background-color:black;
+    color:snow;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+
+

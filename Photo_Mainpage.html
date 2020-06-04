@@ -1,0 +1,141 @@
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Photography</title>
+        <meta name="description" content="Photo">
+        <link rel="icon" href="Photo/Logo.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/MainPhotoCss.css">
+    </head>
+    <body>
+       
+<div class = "promo container">   
+    <div class = "promophoto fade" style="background-image: url(/Photo/H67-222.jpg);">
+        <div class = "content">
+            <p class = "logo dark"><img src = "Photo/Logo.jpg" alt = "logo" width="50" height="50"></p>
+            <div class="text dark">H67</div>
+            <a href="/Photo.html" class="button">See Gallery</a>
+        </div>
+        </div> 
+    
+        <div class = "promophoto fade" style="background-image: url(/Photo/OuiSurf-WhiteDog-16.jpg);">
+        <div class = "content">
+            <p class = "logo dark"><img src = "Photo/Logo.jpg" alt = "logo" width="50" height="50"></p>
+            <div class="text">OuiSurf</div>     
+            
+            <a href="/Photo.html" class="button">See Gallery</a>
+                
+        </div>
+        </div> 
+        
+        <div class = "promophoto fade" style="background-image:url(/Photo/Chic%20Choc%20-%20covid19-44.jpg);">
+        <div class = "content">
+            <p class = "logo dark"><img src = "Inspiration/francois.comtemplate-06.png" alt = "logo" width="150" height="150"></p>
+            <div class="text dark">Chic Choc</div>  
+            <a href="/Photo.html" class="button">See Gallery</a>     
+        </div>
+        </div> 
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+
+</div>
+       
+
+<div>
+    <ul class = "NavigBar"> 
+        <li><a href="/Contact.html"> Contact Me</a></li>
+        <li><a href="/GraphArt.html"> Graphic Design Gallery</a></li>
+        <li><a href="/Photo_MainPage.html"> Photo Gallery</a></li>
+        <li><a href="MainPage.html" class = "Logo"><img src = "Photo/Logo.jpg" alt = "logo" width="50" height="50"></a></li>
+    </ul>
+</div>
+        
+<div class = "Galery">
+    <div class = "Separator">All Galeries</div>
+    <div class = "columns">
+        <div  class ="Image">
+            <img src="/Photo/wellsdrone-12.jpg" alt="Adirondak">
+            <a href="/Photo.html" class="Name">Cerro La Silla</a> 
+        </div>
+        <div  class ="Image"> 
+            <img src="/Photo/Session%202_-48.jpg" alt="Train">
+            <a href="/Photo.html" class="Name">Coiba Island</a>   
+        </div>  
+        <div  class ="Image">
+            <img src="/Photo/Session%202_-49.jpg" alt="Road">
+            <a href="/Photo.html" class="Name">Huaraz</a>
+        </div>
+    </div>
+    
+     <div class = "columns">
+        <div  class ="Image">
+            <img src="/Photo/Northernperu-29.jpg" alt="">
+            <a href="/Photo.html" class="Name">Nova Scotia</a>  
+        </div>
+        <div  class ="Image">    
+            <img src="/Photo/Northernperu-67.jpg" alt=""> 
+            <a href="/Photo.html" class="Name">Acadia</a>
+        </div>
+        <div  class ="Image">    
+            <img src="/Photo/Playa%20Venao_-32.jpg" alt="">
+            <a href="/Photo.html" class="Name">Canadian East Coast</a> 
+        </div>
+
+    </div>   
+    
+    <div class = "columns">
+        <div  class ="Image">
+            <img src="/Photo/Layday-20.jpg" alt="">
+            <a href="/Photo.html" class="Name">Surf</a>  
+        </div>
+        <div  class ="Image">
+            <img src="/Photo/Layday-22.jpg" alt="">
+            <a href="/Photo.html" class="Name">Montreal</a>
+        </div>
+        <div  class ="Image">
+            <img src="/Photo/Lawrence%20town-2.jpg" alt="">
+            <a href="/Photo.html" class="Name">Perou</a>
+            
+        </div>
+    </div>   
+</div>       
+        
+        
+<div class = "footer">                
+</div>
+         
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);  
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("promophoto");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+} 
+</script>  
+        
+        
+ </body>
+ </html>
